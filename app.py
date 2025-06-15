@@ -14,7 +14,7 @@ def webhook():
         data = request.json
         if data['ref'] == 'refs/heads/main':
             # Ejecutar el script de despliegue
-            subprocess.Popen(['powershell.exe', '-File', 'C:\Users\villa\Desktop\deploy.ps1'])
+            subprocess.Popen(['powershell.exe', '-File', 'C:\\Users\\villa\\Desktop\\deploy.ps1'])
             return jsonify({'status': 'success'}), 200
     return jsonify({'status': 'ignored'}), 200
 
