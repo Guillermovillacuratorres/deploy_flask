@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return jsonify({"status": "funcionando","Version":1.0,"deploy":"success"})
+    return jsonify({"status": "funcionando","Version":1.0,"deploy":"success","error":"NOOOOOO"})
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
